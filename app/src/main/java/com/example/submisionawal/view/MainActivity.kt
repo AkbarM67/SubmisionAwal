@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
 
         supportActionBar?.elevation = 0f
-        supportActionBar?.title = "Github Search User"
+        supportActionBar?.title = "Submission Awal"
 
 
         initTheme()

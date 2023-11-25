@@ -1,13 +1,12 @@
 package com.example.submisionawal.view.setting
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.CompoundButton
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.ViewModelProvider
 import com.example.submisionawal.R
 import com.google.android.material.switchmaterial.SwitchMaterial
-
 class Activity_setting : AppCompatActivity() {
 
 
@@ -21,9 +20,8 @@ class Activity_setting : AppCompatActivity() {
 
         val switchTheme = findViewById<SwitchMaterial>(R.id.switch_theme)
         val pref = SettingPreferences.getInstance(application.dataStore)
-        val settingViewModel = ViewModelProvider(this,SettingViewModelFactory(pref)).get(
-            SettingViewModel::class.java
-        )
+        val settingViewModel = ViewModelProvider(this, SettingViewModelFactory(pref))[SettingViewModel::class.java]
+
         settingViewModel.getThemeSettings().observe(this) { isDarkModeActive: Boolean ->
             if (isDarkModeActive) {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
