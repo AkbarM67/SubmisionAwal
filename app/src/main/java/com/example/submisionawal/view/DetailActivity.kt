@@ -95,7 +95,7 @@ class DetailActivity : AppCompatActivity() {
             Glide.with(this@DetailActivity)
                 .load(user.avatarUrl)
                 .into(imgProfileUser)
-            tvUsername.text = user.name
+            tvUserFullName.text = user.name
             tvUsername.text = user.login
             tvUserFollowersNumber.text = user.followers.toString()
             tvUserFollowingsNumber.text = user.following.toString()

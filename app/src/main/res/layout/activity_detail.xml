@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    style="@style/SCREEN"
     tools:context=".view.DetailActivity">
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -22,8 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Nama Lengkap"
-        style="@style/TEXT"
+        android:text="@string/name"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -36,8 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="Username"
-        style="@style/TEXT"
+        android:text="@string/username"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -64,14 +61,12 @@
                 android:padding="8dp"
                 android:textSize="16sp"
                 android:text="100"
-                style="@style/TEXT"
                 android:textStyle="bold" />
 
             <TextView
                 android:padding="8dp"
                 android:text="Followers"
                 android:textSize="16sp"
-                style="@style/TEXT"
                 android:textStyle="italic" />
 
             <Space
@@ -82,7 +77,6 @@
                 android:id="@+id/tvUserFollowingsNumber"
                 android:padding="8dp"
                 android:text="100"
-                style="@style/TEXT"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -90,7 +84,6 @@
                 android:padding="8dp"
                 android:text="Followings"
                 android:textSize="16sp"
-                style="@style/TEXT"
                 android:textStyle="italic" />
 
         </TableRow>
