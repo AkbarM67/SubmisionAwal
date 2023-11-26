@@ -19,7 +19,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         buildConfigField ("String", "BASE_URL", "\"https://api.github.com/\"")
-        buildConfigField("String", "KEY", "\"token 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\"")
+        buildConfigField("String", "KEY", "\"token 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\"")
     }
 
 
